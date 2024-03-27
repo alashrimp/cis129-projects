@@ -2,40 +2,31 @@
 # Lab 3 in CIS129 course at PCC
 # Short 'My Coffee Shop' simulator program 
 
-print('Coffee and Muffin Shop')
+Coffee_cost = 5.00
+Muffin_cost = 4.00
+Tax_rate = 0.06
 
-# Define prices
-"Coffee" : 5.00, 
-"Muffin" : 4.00,
-
-cost_coffee == 5.00
-cost_muffin == 4.00
-
-Tax_rate : 0.06
+print("Welcome to Kait's Coffee Shop!")
 
 # Get user input
 
-input(int("How many coffees would you like?"))
-int(1)
+Coffee = int(input("How many coffees would you like?"))
 
-input(int(How many muffins would you like?"))
-int(2)
+Muffin = int(input("How many muffins would you like?"))
 
 # Calculate Subtotal
 
-int(cost_muffin + cost_coffee) * str(Tax_rate) = (tax_of_purchase)
-int(tax_of_purchase + int(cost_muffin + cost_coffee) = grandtotal 
+Subtotal = int(Coffee * Coffee_cost) + int(Muffin *Muffin_cost)
+print("Subtotal:$",Subtotal)
 
+Taxamount = Tax_rate * (int(Coffee) + int(Muffin))
+print("Tax amount:$",Taxamount) 
 
-print(*****************************)
-print('My Coffee and Muffin Shop")
-print(*****************************)
+Totalamount = Taxamount + Subtotal
+print("Grand total:$",Totalamount)
 
-cost_coffee * 2 == 10.00
-cost_muffin * 1 == 4.00
+subtotal = (int(Coffee) + int(Muffin)) * Tax_rate
 
-subtotal : (cost_muffin + cost_coffee) * tax_of_purchase =
+grandtotal = subtotal + Taxamount 
 
-grandtotal =
-print(Thank you for coming, we hope to see you again soon!')
-print(*****************************)
+print("Thank you for coming, we hope to see you again soon!")
