@@ -17,6 +17,8 @@ price_per_bottle = .10
 
 while (keepGoing == 'y'):
     counter = 1 #initializing back to first day in week
+    total_Bottles = 0
+    total_payout = 0
     while (counter <= num_of_days): 
         print("Enter number of bottles returned for day", counter,":")
         today_bottles = int(input())
