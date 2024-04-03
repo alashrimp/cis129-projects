@@ -5,30 +5,45 @@
 
 #Define variables 
 
-hot_dogs = 10 # number of hot dogs in a package 
-hot_dog_buns = 8 #number of buns in a package 
-
-Need to: 
-Calculate # of packages of hot dogs 
-Calculate # of hot dog buns 
-Need to: ask user for number of people attending the cookout 
-ask user number of hot dogs each person will be given 
-Need to diplay:
-1. The minimum number of packages of hot dogs required.
-2. The minimum number of packages of buns required
-3. The number of hot dogs that will be left over
-4. The number of buns that will be left ove
-
-
-Module main()
+hot_Dogs = 10 # number of hot dogs in a package 
+Buns = 8 # number of buns in a package
+dogs_Left = 0 # left over hot dogs
+min_Dogs = 0 # minimum hotdogs needed 
+buns_Left = 0 # left over hot dog buns
+num_of_people = 0 # number of people attending cookout 
+dogs_per_person = 0 # number of hot dogs per person
+import math
 
 #Input from user 
-print("How many people will be coming to the cookout?", ":")
-num_of_People = int(input())
-print(How many hotdogs will each person be given?", ":")
-num_of_Meals = int(input())
-dogs_Left = 
-buns_Left
-min_Dogs
-min_Buns
+
+print("Enter the number of people attending the cookout",":")
+num_of_people = input(int())
+print("Enter the number of hot dogs for each person:")
+dogs_per_person = input(int())
+total_Hotdogs = num_of_people * dogs_per_person
+
+#Calculating hot dogs needed
+min_Dogs = math.ceil(total_Hotdogs / hot_Dogs)
+dogs_Left = (hot_Dogs - total_Hotdogs % hot_Dogs) % hot_Dogs
+
+#Calculating hot dog buns needed 
+min_Dogs = math.ceil(total / hot_Dogs)
+buns_Left = (Buns - total % Buns) % Buns
+min_Buns = math.ceil(total / Buns)
+
+
+total = num_of_people * total_hotdogs
+
+print("Total number of hot dogs needed:")
+input(int())
+total_hotdogs = number_of_people * dog_per_person
+
+
+print("Minimum packages of hot dogs needed: ", min_Dogs)
+print("Minimum packages of hot dogs buns needed: ", min_Buns)
+print("Hot dogs left over: ", dogs_Left)
+print("Hot dog buns left over: ", buns_Left)
+
+
+
 
