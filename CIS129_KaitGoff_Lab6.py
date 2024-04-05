@@ -44,6 +44,35 @@ print("Minimum packages of hot dogs buns needed: ", min_Buns)
 print("Hot dogs left over: ", dogs_Left)
 print("Hot dog buns left over: ", buns_Left)
 
+#Import Library
+import math 
 
+#Defining Variables
+
+hot_Dogs = 10 # number of hot dogs in a package 
+Buns = 8 # number of buns in a package
+keepGoing = 'y'
+counter = 0
+
+#Input from user 
+
+def total_Hotdogs():
+    print("Enter the number of people attending the cookout", ":")
+    num_of_people = input(int())
+    print("How many hot dogs would you like?", counter, ":") 
+    hot_dog_request = input(int())
+    total_Hotdogs = num_of_people * hot_dog_request
+    return total_Hotdogs 
+
+min_Dogs = math.ceil(total_Hotdogs / hot_Dogs)
+dogs_Left = (hot_Dogs - total_Hotdogs % hot_Dogs) % hot_Dogs
+min_Dogs = math.ceil(total_Hotdogs / hot_Dogs)
+buns_Left = (Buns - total_Hotdogs % Buns) % Buns
+min_Buns = math.ceil(total / Buns)
+    
+print("Minimum packages of hot dogs needed: ", min_Dogs)
+print("Minimum packages of hot dogs buns needed: ", min_Buns)
+print("Hot dogs left over: ", dogs_Left)
+print("Hot dog buns left over: ", buns_Left)
 
 
